@@ -20,7 +20,7 @@
 
 title: VeDPH - Summer Camp
 description:
-baseurl: /vedphsummerschool # the subpath of your site, e.g. /support
+baseurl: /summerschool # the subpath of your site, e.g. /support
 permalink: /:categories/:title
 
 # Let's show posts with date in the future too
