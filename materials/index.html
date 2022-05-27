@@ -1,0 +1,38 @@
+---
+layout: category
+category: materials
+title: Materials, slides & tools
+---
+
+<h2>Strand #1 - Digital Textual Scholarship</h2>
+
+{% for p in site.pages reversed %}
+  {% if p.subcategory == "materials strand1" %}
+    {% include card.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Strand #2 - Digital and Public History</h2>
+
+{% for p in site.pages reversed %}
+  {% if p.subcategory == "materials strand2" %}
+    {% include card.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Strand #3 - Digital and Public Art History</h2>
+
+{% for p in site.pages reversed %}
+  {% if p.subcategory == "materials strand3" %}
+    {% include card.html %}
+  {% endif %}
+{% endfor %}
+
+
+<h2>Strand #4 - Digital Archaeology and its Public</h2>
+
+{% for p in site.pages reversed %}
+  {% if p.subcategory == "materials strand4" %}
+    {% include card.html %}
+  {% endif %}
+{% endfor %}

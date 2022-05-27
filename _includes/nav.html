@@ -1,0 +1,47 @@
+<nav class="container grid-xl navbar">
+  <div class="flex-vertical-center hide-sm">
+    <a style="width: 20%;" href="{{ site.baseurl }}/" class="logo">
+      <img style="max-width: 100%;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/>
+    </a>
+<!--*    <svg id="anglesvg" <svg height="100" width="10%" xmlns="http://www.w3.org/2000/svg"><path id="lineAB" d="M 10 350 l 0 -500" stroke="white"
+      stroke-width="2" fill="white" /></svg>
+-->
+    <svg width="20" height="50">
+      <path d=" M 0 50 L 0 -50 " stroke="white" stroke-width="4" fill="white" />
+    </svg>
+      <a style="width: 20%;" href="{{ site.baseurl }}/" class="logo">
+      <img style="max-width: 100%;" src="{{ site.baseurl }}/assets/{{ site.brand_text_logo }}"/>
+    </a>
+  </div>
+
+  <div class="text-center show-sm">
+    
+    <a style="width: 100%;" href="{{ site.baseurl }}/" class="logo flex-centered">
+      <img style="max-width: 150px;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/>
+    </a>
+
+    <svg width="100" height="10">
+      <path d=" M 100 0 L -100 0 " stroke="white" stroke-width="4" fill="white" />
+    </svg>
+
+    <a style="width: 100%;" href="{{ site.baseurl }}/" class="logo flex-centered">
+      <img style="max-width: 60%;" src="{{ site.baseurl }}/assets/{{ site.brand_text_logo }}"/>
+    </a>
+  </div>
+  <ul class="main-nav">
+
+    {% for category in site.main_categories %}
+      {% for p in site.pages %}
+        {% if p.category == category and p.subcategory == undefined %}
+      <li class="mx-4">
+        <a  class="nav-links" href="{{ site.baseurl }}/{{ category | slugify }}">{{ p.title }}</a>
+      </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    <li>
+      <a href="{{ site.nav_button_link }}" style="height: auto;" class="btn btn-lg btn-outline py-2">{{ site.nav_button }}</a>
+    </li>
+  </ul>
+</nav>
