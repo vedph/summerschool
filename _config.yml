@@ -27,6 +27,7 @@ permalink: /:categories/:title
 future: true
 
 brand_logo: logo.png
+brand_logo_unive: univelogo.png
 brand_text_logo: logo_text.png
 brand_name: VeDPH
 header: VENICE DIGITAL AND PUBLIC HUMANITIES SUMMER SCHOOL
