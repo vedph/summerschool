@@ -4,35 +4,35 @@ category: materials
 title: Materials, slides & tools
 ---
 
-<h2>Strand #1 - Digital Textual Scholarship</h2>
+<h2>Day #2 - A Global Approach to Digital Textual Scholarship</h2>
 
 {% for p in site.pages reversed %}
-  {% if p.subcategory == "materials strand1" %}
+  {% if p.subcategory == "materials day2" %}
     {% include card.html %}
   {% endif %}
 {% endfor %}
 
-<h2>Strand #2 - Digital and Public History</h2>
+<h2>Day #3 - Endangered Cultural Heritage in Venice</h2>
 
 {% for p in site.pages reversed %}
-  {% if p.subcategory == "materials strand2" %}
-    {% include card.html %}
-  {% endif %}
-{% endfor %}
-
-<h2>Strand #3 - Digital and Public Art History</h2>
-
-{% for p in site.pages reversed %}
-  {% if p.subcategory == "materials strand3" %}
+  {% if p.subcategory == "materials day3" %}
     {% include card.html %}
   {% endif %}
 {% endfor %}
 
 
-<h2>Strand #4 - Digital Archaeology and its Public</h2>
+<h2>Day #4 - History on display and in the streets. Discovering the past through public and digital technologies</h2>
 
 {% for p in site.pages reversed %}
-  {% if p.subcategory == "materials strand4" %}
+  {% if p.subcategory == "materials day4" %}
+    {% include card.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Day #5 - From Digital Museography to Contemporary Artistic Practice: Venice, the Biennale and Beyond</h2>
+
+{% for p in site.pages reversed %}
+  {% if p.subcategory == "materials day5" %}
     {% include card.html %}
   {% endif %}
 {% endfor %}
