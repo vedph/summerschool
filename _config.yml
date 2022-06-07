@@ -27,8 +27,13 @@ permalink: /:categories/:title
 future: true
 
 brand_logo: logo.png
+#logo variables
 brand_logo_unive: univelogo.png
 brand_text_logo: logo_text.png
+brand_logo_aiucd: logo_aiucd.png
+brand_logo_diptext_kc: logo_diptex_kc.png
+brand_logo_sale: logo_sale.png
+brand_logo_biennale: logo_biennale.jpg
 brand_name: VeDPH
 header: VENICE DIGITAL AND PUBLIC HUMANITIES SUMMER SCHOOL
 subheader: 11-15 July 2022
